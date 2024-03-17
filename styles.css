@@ -4,30 +4,63 @@ body {
   padding: 0;
 }
 
-h1 {
-  text-align: center;
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#search {
+h1 {
+  text-align: center;
+  color: #3498db;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
   width: 100%;
   padding: 10px;
-  margin-bottom: 20px;
+  margin: 8px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+.btn-container {
+  text-align: center;
+  margin-top: 20px;
 }
 
-li {
-  padding: 10px;
-  border-bottom: 1px solid #ccc;
-}
-
-li:hover {
-  background-color: #f2f2f2;
+.btn {
+  background-color: #3498db;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.bezel {
+  background-color: #3498db;
+  padding: 10px;
+  text-align: center;
+}
+
+.home-link {
+  color: #ffffff;
+  text-decoration: none;
 }

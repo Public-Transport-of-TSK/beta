@@ -3,19 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Stops and Stations</title>
+  <title>Transit App</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>All Stops and Stations</h1>
+<div class="bezel">
+  <a href="index.html" class="home-link">Home</a>
+</div>
 
-<input type="text" id="search" placeholder="Search...">
-<ul id="stops-list">
-  <!-- Stops will be populated here -->
-</ul>
-
-<script src="script.js"></script>
+<div class="container">
+  <h1>Transit App</h1>
+  <form action="#">
+    <div>
+      <label for="from">From:</label>
+      <input type="text" id="from" placeholder="Enter starting point">
+    </div>
+    <div>
+      <label for="to">To:</label>
+      <input type="text" id="to" placeholder="Enter destination">
+    </div>
+    <div>
+      <label for="date">Date:</label>
+      <input type="date" id="date">
+    </div>
+    <div>
+      <label for="time">Time:</label>
+      <input type="time" id="time">
+    </div>
+    <div class="btn-container">
+      <button type="submit" class="btn">Search</button>
+    </div>
+  </form>
+  <div class="btn-container">
+    <a href="all_stops.html" class="btn">All Stops and Stations</a>
+    <a href="all_lines.html" class="btn">All Lines</a>
+  </div>
+</div>
 
 </body>
 </html>
